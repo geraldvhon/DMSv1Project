@@ -167,14 +167,14 @@
                         <%-- For Profile --%>
 
 
-                        <%-- For My Credencials --%>
+                        <%-- For My Credentials --%>
                         <li>
-                            <a href="frmMyCredencials.aspx">
-                                <i class="fa fa-briefcase"></i><span>Credencials</span>
+                            <a href="frmMyCredentials.aspx">
+                                <i class="fa fa-briefcase"></i><span>Credentials</span>
                              </a>
                        </li>
 
-                        <%-- For My Credencials --%>
+                        <%-- For My Credentials --%>
 
 
                          <%-- For My Research --%>
@@ -186,24 +186,24 @@
 
                         <%-- For My Research --%>
 
-                       <%-- For My Trannings   --%>
+                       <%-- For My Trainings   --%>
                         <li class="dropdown tasks-menu">
-                            <a href="frmMyTrainning.aspx">
-                                <i class="fa fa-users"></i><span>Trainnings </span>
+                            <a href="frmMyTraining.aspx">
+                                <i class="fa fa-users"></i><span>Trainings </span>
                              </a>
                        </li>
 
-                        <%-- For My Trannings  --%>
+                        <%-- For My Trainings  --%>
 
 
-                        <%-- For My Seminnars --%>
+                        <%-- For My Seminars --%>
                         <li class="dropdown tasks-menu">
-                            <a href="frmMySeminnar.aspx">
-                                <i class="fa fa-users"></i><span>Seminnars</span>
+                            <a href="frmMySeminar.aspx">
+                                <i class="fa fa-users"></i><span>Seminars</span>
                              </a>
                        </li>
 
-                        <%-- For My Seminnars --%>
+                        <%-- For My Seminars --%>
 
                         <%-- For My Award --%>
                         <li class="dropdown tasks-menu">
@@ -212,7 +212,7 @@
                              </a>
                        </li>
 
-                        <%-- For My Seminnars --%>
+                        <%-- For My Seminars --%>
 
                         <%-- For My Schedule --%>
                         <li class="dropdown tasks-menu">

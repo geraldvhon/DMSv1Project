@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ClientsFolder/Faculty/Facultytemplate.Master" AutoEventWireup="true" CodeBehind="frmMyCredencials.aspx.cs" Inherits="OQA_System1.ClientsFolder.Faculty.frmMyCredencials" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ClientsFolder/Faculty/Facultytemplate.Master" AutoEventWireup="true" CodeBehind="frmMyCredentials.aspx.cs" Inherits="OQA_System1.ClientsFolder.Faculty.frmMyCredencials" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title_Page" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Add_Some_from_head" runat="server">

@@ -7357,12 +7357,12 @@
     <Content Include="ClientsFolder\Admin\SampleWebpageForAdmin.aspx" />
     <Content Include="ClientsFolder\Faculty\FrmInstruc.aspx" />
     <Content Include="ClientsFolder\Faculty\frmMyAward.aspx" />
-    <Content Include="ClientsFolder\Faculty\frmMyCredencials.aspx" />
+    <Content Include="ClientsFolder\Faculty\frmMyCredentials.aspx" />
     <Content Include="ClientsFolder\Faculty\frmMyProfile.aspx" />
     <Content Include="ClientsFolder\Faculty\FrmMyResearch.aspx" />
     <Content Include="ClientsFolder\Faculty\frmMySchedule.aspx" />
-    <Content Include="ClientsFolder\Faculty\frmMySeminnar.aspx" />
-    <Content Include="ClientsFolder\Faculty\frmMyTrainning.aspx" />
+    <Content Include="ClientsFolder\Faculty\frmMySeminar.aspx" />
+    <Content Include="ClientsFolder\Faculty\frmMyTraining.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -7439,12 +7439,12 @@
     <Compile Include="ClientsFolder\Faculty\frmMyAward.aspx.designer.cs">
       <DependentUpon>frmMyAward.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ClientsFolder\Faculty\frmMyCredencials.aspx.cs">
-      <DependentUpon>frmMyCredencials.aspx</DependentUpon>
+    <Compile Include="ClientsFolder\Faculty\frmMyCredentials.aspx.cs">
+      <DependentUpon>frmMyCredentials.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ClientsFolder\Faculty\frmMyCredencials.aspx.designer.cs">
-      <DependentUpon>frmMyCredencials.aspx</DependentUpon>
+    <Compile Include="ClientsFolder\Faculty\frmMyCredentials.aspx.designer.cs">
+      <DependentUpon>frmMyCredentials.aspx</DependentUpon>
     </Compile>
     <Compile Include="ClientsFolder\Faculty\frmMyProfile.aspx.cs">
       <DependentUpon>frmMyProfile.aspx</DependentUpon>
@@ -7467,19 +7467,19 @@
     <Compile Include="ClientsFolder\Faculty\frmMySchedule.aspx.designer.cs">
       <DependentUpon>frmMySchedule.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ClientsFolder\Faculty\frmMySeminnar.aspx.cs">
-      <DependentUpon>frmMySeminnar.aspx</DependentUpon>
+    <Compile Include="ClientsFolder\Faculty\frmMySeminar.aspx.cs">
+      <DependentUpon>frmMySeminar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ClientsFolder\Faculty\frmMySeminnar.aspx.designer.cs">
-      <DependentUpon>frmMySeminnar.aspx</DependentUpon>
+    <Compile Include="ClientsFolder\Faculty\frmMySeminar.aspx.designer.cs">
+      <DependentUpon>frmMySeminar.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ClientsFolder\Faculty\frmMyTrainning.aspx.cs">
-      <DependentUpon>frmMyTrainning.aspx</DependentUpon>
+    <Compile Include="ClientsFolder\Faculty\frmMyTraining.aspx.cs">
+      <DependentUpon>frmMyTraining.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ClientsFolder\Faculty\frmMyTrainning.aspx.designer.cs">
-      <DependentUpon>frmMyTrainning.aspx</DependentUpon>
+    <Compile Include="ClientsFolder\Faculty\frmMyTraining.aspx.designer.cs">
+      <DependentUpon>frmMyTraining.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

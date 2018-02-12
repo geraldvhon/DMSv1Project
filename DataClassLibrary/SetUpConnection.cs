@@ -12,7 +12,7 @@ namespace DataClassLibrary
         #region Connection String Setup
         public static SqlConnection ConString()
         {
-            return new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\forprototype\OQA_System1\OQA_System1\App_Data\genrec.mdf;Integrated Security=True");
+            return new SqlConnection(@"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\ASP_TestType_Mode\OnGitHub\DMSv1\OQA_System1\App_Data\genrec.mdf;Integrated Security=True");
         }
         #endregion
     }

@@ -67,15 +67,14 @@
                             <hr>
 
                             <strong><i class="fa fa-pencil margin-r-5"></i>Skills</strong>
-
                             <p>
-                                <span class="label label-danger">UI Design</span>
-                                <span class="label label-success">Coding</span>
-                                <span class="label label-info">Javascript</span>
-                                <span class="label label-warning">PHP</span>
-                                <span class="label label-primary">Node.js</span>
+                                <asp:Label ID="lblExpertIn" CssClass="label label-primary" runat="server" Text="0"></asp:Label>
+                                <%--<span class="label label-danger">UI Design</span>
+                                    <span class="label label-success">Coding</span>
+                                    <span class="label label-info">Javascript</span>
+                                    <span class="label label-warning">PHP</span>
+                                    <span class="label label-primary">Node.js</span>--%>
                             </p>
-
                             <hr>
 
                             <strong><i class="fa fa-file-text-o margin-r-5"></i>Notes</strong>
@@ -102,7 +101,7 @@
                         <div class="form-group input-group-sm">
                             <div class="col-xs-2">
                                 <asp:Label ID="Label8" CssClass="input-group-sm" runat="server" Text="Employee Number"></asp:Label>
-                                <asp:TextBox ID="TextBox3" CssClass="form-control input-sm " runat="server"></asp:TextBox>
+                                <asp:Label ID="lblempno" CssClass="input-group-sm" runat="server" Text="0"></asp:Label>
                             </div>
                         </div>
                     </div>
@@ -129,40 +128,44 @@
                                 <asp:TextBox ID="txtNkName" CssClass="form-control input-sm " runat="server"></asp:TextBox>
                             </div>
                             <div class="col-xs-3">
-                                <asp:Label ID="Label1" CssClass="input-group-sm" runat="server" Text="Gender"></asp:Label>
-                                <asp:TextBox ID="TextBox2" CssClass="form-control input-sm " runat="server"></asp:TextBox>
+                                <asp:Label ID="Label1" CssClass="input-group-sm" runat="server" Text="Gender"></asp:Label><br />
+                                <asp:DropDownList ID="drpGender" CssClass="form-control input-sm" runat="server" AutoPostBack="True" SkinID="btn btn-info" Width="128px">
+                                    <asp:ListItem>Select Gender</asp:ListItem>
+                                    <asp:ListItem>Male</asp:ListItem>
+                                    <asp:ListItem>Female</asp:ListItem>
+                                </asp:DropDownList>
                             </div>
 
                             <div class="col-xs-3">
                                 <asp:Label ID="Label2" CssClass="input-group-sm" runat="server" Text="Religion"></asp:Label>
-                                <asp:TextBox ID="TextBox4" CssClass="form-control input-sm " runat="server"></asp:TextBox>
+                                <asp:TextBox ID="txtReligion" CssClass="form-control input-sm " runat="server"></asp:TextBox>
                             </div>
 
                             <div class="col-xs-3">
                                 <asp:Label ID="Label9" CssClass="input-group-sm" runat="server" Text="Civil Status"></asp:Label>
-                                <asp:TextBox ID="TextBox10" CssClass="form-control input-sm " runat="server"></asp:TextBox>
+                                <asp:TextBox ID="txtCivilStatus" CssClass="form-control input-sm " runat="server"></asp:TextBox>
                             </div>
                         </div>
                     </div>
 
                     <asp:Label ID="lblAddress" CssClass="input-group-sm" runat="server" Text="Address"></asp:Label>
-                    <asp:TextBox ID="TextBox1" CssClass="form-control input-sm " runat="server" TextMode="MultiLine"></asp:TextBox>
+                    <asp:TextBox ID="txtAddress" CssClass="form-control input-sm " runat="server" TextMode="MultiLine"></asp:TextBox>
 
                     <div class="row">
                         <div class="form-group input-group-sm">
                             <div class="col-xs-4">
                                 <asp:Label ID="Label3" CssClass="input-group-sm" runat="server" Text="Email"></asp:Label>
 
-                                <asp:TextBox ID="TextBox5" CssClass="form-control input-sm " runat="server"></asp:TextBox>
+                                <asp:TextBox ID="txtEmail" CssClass="form-control input-sm " runat="server"></asp:TextBox>
                             </div>
                             <div class="col-xs-4">
                                 <asp:Label ID="Label4" CssClass="input-group-sm" runat="server" Text="Telephone Number"></asp:Label>
-                                <asp:TextBox ID="TextBox6" CssClass="form-control input-sm " runat="server"></asp:TextBox>
+                                <asp:TextBox ID="txtTelNo" CssClass="form-control input-sm " runat="server"></asp:TextBox>
                             </div>
 
                             <div class="col-xs-4">
                                 <asp:Label ID="Label5" CssClass="input-group-sm" runat="server" Text="Cell Phone Number"></asp:Label>
-                                <asp:TextBox ID="TextBox7" CssClass="form-control input-sm " runat="server"></asp:TextBox>
+                                <asp:TextBox ID="txtCellNo" CssClass="form-control input-sm " runat="server"></asp:TextBox>
                             </div>
                         </div>
                     </div>
@@ -172,11 +175,11 @@
                             <div class="col-xs-4">
                                 <asp:Label ID="Label6" CssClass="input-group-sm" runat="server" Text="Birthday"></asp:Label>
 
-                                <asp:TextBox ID="TextBox8" CssClass="form-control input-sm " runat="server"></asp:TextBox>
+                                <asp:TextBox ID="txtBday" CssClass="form-control input-sm " runat="server"></asp:TextBox>
                             </div>
                             <div class="col-lg-8">
                                 <asp:Label ID="Label7" CssClass="input-group-sm" runat="server" Text="Place of Birth"></asp:Label>
-                                <asp:TextBox ID="TextBox9" CssClass="form-control input-sm " runat="server" TextMode="MultiLine"></asp:TextBox>
+                                <asp:TextBox ID="txtBplace" CssClass="form-control input-sm " runat="server" TextMode="MultiLine"></asp:TextBox>
                             </div>
                         </div>
                     </div>
@@ -194,5 +197,5 @@
         <%-- End Left Side Personal Info --%>
         <!-- /.col -->
     </div>
-    
+
 </asp:Content>

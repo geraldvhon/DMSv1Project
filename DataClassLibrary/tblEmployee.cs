@@ -59,6 +59,19 @@ namespace DataClassLibrary
             return Dt;
         }
 
+        public DataTable sp_Faculty_Display2()
+        {
+            DataTable Dt = new DataTable();
+            conn.Close();
+            SqlCommand cmd = new SqlCommand("sp_Faculty_Display2", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@empID", SqlDbType.VarChar).Value = EmpID;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            Dt.Clear();
+            da.Fill(Dt);
+            return Dt;
+        }
+
 
         /* empID, lname, fname, mname, nkName, gender, civil_Stat, religion,
         per_add, prob_add, email, telno, cp_no, bday, bplace, isActive, 
@@ -68,26 +81,26 @@ namespace DataClassLibrary
         {   conn.Open();
             SqlCommand cmd = new SqlCommand("sp_RegisterEmployee", conn);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@isAdd", SqlDbType.NVarChar).Value = isAdd;
-            cmd.Parameters.Add("@empID", SqlDbType.NVarChar).Value = EmpID;
-            cmd.Parameters.Add("@lname", SqlDbType.NVarChar).Value = Lname;
-            cmd.Parameters.Add("@fname", SqlDbType.NVarChar).Value = Fname;
-            cmd.Parameters.Add("@mname", SqlDbType.NVarChar).Value = Mname;
-            cmd.Parameters.Add("@nkName", SqlDbType.NVarChar).Value = NkName;
-            cmd.Parameters.Add("@gender", SqlDbType.NVarChar).Value = Gender;
-            cmd.Parameters.Add("@civil_Stat", SqlDbType.NVarChar).Value = Civil_Stat;
-            cmd.Parameters.Add("@religion", SqlDbType.NVarChar).Value = Religion;
-            cmd.Parameters.Add("@per_add", SqlDbType.NVarChar).Value = Per_add;
-            cmd.Parameters.Add("@prob_add", SqlDbType.NVarChar).Value = Prob_add;
-            cmd.Parameters.Add("@email", SqlDbType.NVarChar).Value = Email;
-            cmd.Parameters.Add("@telno", SqlDbType.NVarChar).Value = Telno;
-            cmd.Parameters.Add("@cp_no", SqlDbType.NVarChar).Value = Cp_no;
-            cmd.Parameters.Add("@bday", SqlDbType.NVarChar).Value = Bday;
-            cmd.Parameters.Add("@bplace", SqlDbType.NVarChar).Value = Bplace;
-            cmd.Parameters.Add("@isActive", SqlDbType.NVarChar).Value = IsActive;
-            cmd.Parameters.Add("@statusCode", SqlDbType.NVarChar).Value = StatusCode;
-            cmd.Parameters.Add("@expertIn", SqlDbType.NVarChar).Value = ExpertIn;
-            cmd.Parameters.Add("@password", SqlDbType.NVarChar).Value = Password;
+            cmd.Parameters.Add("@isAdd", SqlDbType.VarChar).Value = isAdd;
+            cmd.Parameters.Add("@empID", SqlDbType.VarChar).Value = EmpID;
+            cmd.Parameters.Add("@lname", SqlDbType.VarChar).Value = Lname;
+            cmd.Parameters.Add("@fname", SqlDbType.VarChar).Value = Fname;
+            cmd.Parameters.Add("@mname", SqlDbType.VarChar).Value = Mname;
+            cmd.Parameters.Add("@nkName", SqlDbType.VarChar).Value = NkName;
+            cmd.Parameters.Add("@gender", SqlDbType.VarChar).Value = Gender;
+            cmd.Parameters.Add("@civil_Stat", SqlDbType.VarChar).Value = Civil_Stat;
+            cmd.Parameters.Add("@religion", SqlDbType.VarChar).Value = Religion;
+            cmd.Parameters.Add("@per_add", SqlDbType.VarChar).Value = Per_add;
+            cmd.Parameters.Add("@prob_add", SqlDbType.VarChar).Value = Prob_add;
+            cmd.Parameters.Add("@email", SqlDbType.VarChar).Value = Email;
+            cmd.Parameters.Add("@telno", SqlDbType.VarChar).Value = Telno;
+            cmd.Parameters.Add("@cp_no", SqlDbType.VarChar).Value = Cp_no;
+            cmd.Parameters.Add("@bday", SqlDbType.VarChar).Value = Bday;
+            cmd.Parameters.Add("@bplace", SqlDbType.VarChar).Value = Bplace;
+            cmd.Parameters.Add("@isActive", SqlDbType.VarChar).Value = IsActive;
+            cmd.Parameters.Add("@statusCode", SqlDbType.VarChar).Value = StatusCode;
+            cmd.Parameters.Add("@expertIn", SqlDbType.VarChar).Value = ExpertIn;
+            cmd.Parameters.Add("@password", SqlDbType.VarChar).Value = Password;
             cmd.ExecuteNonQuery();
             conn.Close();
         }

@@ -68,8 +68,10 @@
 
                             <strong><i class="fa fa-pencil margin-r-5"></i>Skills</strong>
                             <p>
-                                <asp:Panel ID="Panel1" CssClass="col-xs-3" runat="server"></asp:Panel><br />
-                               
+                                <div class="margin-r-5">
+                                    <asp:Panel ID="Panel1" CssClass=" margin-r-5" runat="server"></asp:Panel>
+                                    <br />
+                                </div>
                                 <%-- <asp:Label ID="lblExpertIn" CssClass="label label-primary" runat="server" Text="0"></asp:Label>--%>
                                 <%--<span class="label label-danger">UI Design</span>
                                     <span class="label label-success">Coding</span>

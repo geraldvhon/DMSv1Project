@@ -10,6 +10,7 @@ namespace DataClassLibrary
 {
     public class tblEmployee
     {
+        //Sample Remark
         #region Connection String Setup
         private static SqlConnection conn = SetUpConnection.ConString();
         #endregion

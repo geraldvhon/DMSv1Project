@@ -1,6 +1,7 @@
 ﻿using DataClassLibrary;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -17,8 +18,11 @@ namespace OQA_System1.ClientsFolder.Web_InstructorsFolder
             if (!IsPostBack)
             {
                 GetValue();
+               
             }
-
+           
+           
+            
         }
 
 
@@ -32,7 +36,7 @@ namespace OQA_System1.ClientsFolder.Web_InstructorsFolder
             txtNkName.Text = tblemp.sp_Faculty_Display2().Rows[0][4].ToString();
             drpGender.Text = tblemp.sp_Faculty_Display2().Rows[0][5].ToString();
             txtCivilStatus.Text = tblemp.sp_Faculty_Display2().Rows[0][6].ToString();
-            txtReligion.Text = tblemp.sp_Faculty_Display2().Rows[0][7].ToString();
+            drpReligion.Text = tblemp.sp_Faculty_Display2().Rows[0][7].ToString();
             txtAddress.Text = tblemp.sp_Faculty_Display2().Rows[0][8].ToString();
             txtEmail.Text =  tblemp.sp_Faculty_Display2().Rows[0][9].ToString();
             txtTelNo.Text = tblemp.sp_Faculty_Display2().Rows[0][10].ToString();
@@ -40,9 +44,12 @@ namespace OQA_System1.ClientsFolder.Web_InstructorsFolder
             txtBday.Text = tblemp.sp_Faculty_Display2().Rows[0][12].ToString();
             txtBplace.Text = tblemp.sp_Faculty_Display2().Rows[0][13].ToString();
             lblStatus.Text = tblemp.sp_Faculty_Display2().Rows[0][14].ToString();
-            //lblExpertIn.Text = tblemp.sp_Faculty_Display2().Rows[0][15].ToString();
             lblDeparment.Text = tblemp.sp_Faculty_Display2().Rows[0][16].ToString();
             lblCollege.Text = tblemp.sp_Faculty_Display2().Rows[0][17].ToString();
+            lblATF.Text = tblemp.sp_Faculty_Display2().Rows[0][18].ToString();
+            lblRank.Text = tblemp.sp_Faculty_Display2().Rows[0][19].ToString();
+            lblfl_name.Text = tblemp.sp_Faculty_Display2().Rows[0][20].ToString();
+            imgProfilePict.ImageUrl = tblemp.sp_Faculty_Display2().Rows[0][21].ToString();
 
             //Label lbl = new Label();
             //lbl.Text = "your text";
@@ -73,6 +80,39 @@ namespace OQA_System1.ClientsFolder.Web_InstructorsFolder
             spacer.Mode = LiteralMode.Transform;
             spacer.Text = @"&nbsp;";
             return spacer;
+        }
+
+
+
+        protected void UploadButton_Click2(object sender, EventArgs e)
+        {
+            FileUploadControl.Load();
+        }
+        protected void UploadButton_Click(object sender, EventArgs e)
+        {
+            if (FileUploadControl.HasFile)
+            {
+                try
+                {
+                    if (FileUploadControl.PostedFile.ContentType == "image/jpeg")
+                    {
+                        if (FileUploadControl.PostedFile.ContentLength < 102400)
+                        {
+                            string filename = Path.GetFileName(FileUploadControl.FileName);
+                            FileUploadControl.SaveAs(Server.MapPath("../../Assets/dist/img/") + filename);
+                            lblER_Image.Text = filename;
+                        }
+                        else
+                            lblER_Image.Text = "Upload status: The file has to be less than 100 kb!";
+                    }
+                    else
+                        lblER_Image.Text = "Upload status: Only JPEG files are accepted!";
+                }
+                catch (Exception ex)
+                {
+                    lblER_Image.Text = "Upload status: The file could not be uploaded. The following error occured: " + ex.Message;
+                }
+            }
         }
     }
 }

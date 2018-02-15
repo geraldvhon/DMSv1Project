@@ -44,18 +44,18 @@
 
     
       <div class="form-group has-feedback">
-        <asp:TextBox ID="txtemail" runat="server"  class="form-control"></asp:TextBox>
+        <asp:TextBox ID="txtemail" runat="server"  CssClass="form-control"></asp:TextBox>
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-         <asp:TextBox ID="txtpassword" runat="server"  class="form-control"></asp:TextBox>
+         <asp:TextBox ID="txtpassword" runat="server"  CssClass="form-control"></asp:TextBox>
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="row">
        
         <!-- /.col -->
         <div class="col-xs-4">
-         <asp:Button ID="btnsubmit" runat="server" class="btn btn-primary btn-block btn-flat" Text="Sign In" OnClick="btnsubmit_Click" />
+         <asp:Button ID="btnsubmit" runat="server" CssClass="btn btn-primary btn-block btn-flat" Text="Sign In" OnClick="btnsubmit_Click" />
         </div>
         <!-- /.col -->
       </div>

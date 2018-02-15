@@ -51,33 +51,28 @@ namespace OQA_System1.ClientsFolder.Web_InstructorsFolder
             string s = tblemp.sp_Faculty_Display2().Rows[0][15].ToString();
             string[] words = s.Split(',');
             int x = 0;
+
             foreach (string word in words)
             {
+                var spacer = sp();
                 Label lbl = new Label();
                 lbl.ID = "lbl" + x.ToString();
                 lbl.CssClass = "label label-primary";
                 lbl.Text = word;
-
+                Panel1.Controls.Add(spacer);
                 Panel1.Controls.Add(lbl);
                 x++;
             }
-            //for (int x = 0; x <= 3; x++ )
-            //{
-            //  // var objname = "lbl"+(x).ToString();
-
-            //   Label lbl = new Label();
-            //   lbl.ID = "lbl"+x.ToString();
-            //   lbl.Text = "Label" + x.ToString();
-            //   Panel1.Controls.Add(lbl);
-            //}
-
-
-               // Panel1.Controls.Add(lbl);
-            
-
-
-
-
          }
+
+        public Literal sp()
+        {
+            Literal spacer = new Literal();
+            spacer.Mode = LiteralMode.Encode;
+            spacer.Mode = LiteralMode.PassThrough;
+            spacer.Mode = LiteralMode.Transform;
+            spacer.Text = @"&nbsp;";
+            return spacer;
+        }
     }
 }

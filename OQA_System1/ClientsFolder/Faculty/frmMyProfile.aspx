@@ -68,8 +68,9 @@
 
                             <strong><i class="fa fa-pencil margin-r-5"></i>Skills</strong>
                             <p>
-                                <asp:Panel ID="Panel1" CssClass="col-xs-3" runat="server"></asp:Panel><br />
-                               
+                                <asp:Panel ID="Panel1" CssClass="col-xs-3" runat="server"></asp:Panel>
+                                <br />
+
                                 <%-- <asp:Label ID="lblExpertIn" CssClass="label label-primary" runat="server" Text="0"></asp:Label>--%>
                                 <%--<span class="label label-danger">UI Design</span>
                                     <span class="label label-success">Coding</span>
@@ -131,7 +132,7 @@
                             </div>
                             <div class="col-xs-3">
                                 <asp:Label ID="Label1" CssClass="input-group-sm" runat="server" Text="Gender"></asp:Label>
-                                <asp:DropDownList ID="drpGender" CssClass="btn btn-default dropdown-toggle" runat="server" AutoPostBack="True" Width="150px">
+                                <asp:DropDownList ID="drpGender" CssClass="btn btn-default dropdown-toggle form-control input-sm" runat="server">
                                     <asp:ListItem>Select Gender</asp:ListItem>
                                     <asp:ListItem>Male</asp:ListItem>
                                     <asp:ListItem>Female</asp:ListItem>

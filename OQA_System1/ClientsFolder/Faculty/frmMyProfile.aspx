@@ -63,7 +63,7 @@
                             </p>
                             <hr>
 
-                            <strong><i class="fa fa-star margin-r-5"></i>ATFTS</strong>
+                            <strong><i class="fa fa-star margin-r-5"></i>Faculty Type</strong>
 
                             <p class="text-muted">
                                  <asp:Label ID="lblATF" CssClass="label label-primary" runat="server" Text="Fulltime Faculty"></asp:Label>
@@ -71,7 +71,7 @@
 
                             <hr>
 
-                            <strong><i class="fa fa-pencil margin-r-5"></i>Skills</strong>
+                            <strong><i class="fa fa-pencil margin-r-5"></i>Specialization</strong>
                             <p>
                                 <asp:Panel ID="Panel1" CssClass="margin-r-5" runat="server"></asp:Panel>
                                 <br />
@@ -205,9 +205,13 @@
                                 <asp:Label ID="Label10" CssClass="input-group-sm" runat="server" Text="Update Profile Picture"></asp:Label>
                                 <asp:FileUpload ID="FileUploadControl" CssClass="input-group-sm" runat="server" />
                                 <asp:Label ID="lblER_Image" CssClass="input-group-sm" runat="server" Text=""></asp:Label>
-                                
                             </div>
-                            
+
+                            <div class="col-lg-8">
+                                <asp:Label ID="Label11" CssClass="input-group-sm" runat="server" Text="Specialization"></asp:Label>
+                                <asp:TextBox ID="txtexpertin" CssClass="form-control input-sm " runat="server" TextMode="MultiLine"></asp:TextBox>
+                            </div>
+
                         </div>
                     </div>
 

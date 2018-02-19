@@ -186,7 +186,7 @@
                                 </span>
                             </a>
                             <ul class="treeview-menu">
-                                <li><a href="frmFacultyList.aspx"><i class="fa fa-users"></i>Faculty Mster List</a></li>
+                                <li><a href="frmFacultyList.aspx"><i class="fa fa-users"></i>Faculty Master List</a></li>
                             </ul>
                         </li>
 

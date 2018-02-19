@@ -39,6 +39,7 @@ namespace OQA_System1.ClientsFolder.Web_InstructorsFolder
             txtBday.Text = tblemp.sp_Faculty_Display2().Rows[0][12].ToString();
             txtBplace.Text = tblemp.sp_Faculty_Display2().Rows[0][13].ToString();
             lblStatus.Text = tblemp.sp_Faculty_Display2().Rows[0][14].ToString();
+            txtexpertin.Text = tblemp.sp_Faculty_Display2().Rows[0][15].ToString();
             lblDeparment.Text = tblemp.sp_Faculty_Display2().Rows[0][16].ToString();
             lblCollege.Text = tblemp.sp_Faculty_Display2().Rows[0][17].ToString();
             lblATF.Text = tblemp.sp_Faculty_Display2().Rows[0][18].ToString();

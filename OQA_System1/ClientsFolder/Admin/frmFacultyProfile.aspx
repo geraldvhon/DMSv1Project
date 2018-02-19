@@ -16,7 +16,7 @@
 
     <%-- Main Continer Right Side --%>
 
-    <div class="col-md-6">
+    
 
         <%-- Container Employee Profile --%>
         <div class="box box-primary ">
@@ -31,20 +31,15 @@
                     <div class="row">
                         <div class="form-group input-group-sm">
                             <div class="col-xs-4">
-                                <asp:Label ID="Label8" CssClass="input-group-sm" runat="server" Text="Employee Number"></asp:Label>
+                                <asp:Label ID="Label8" CssClass="input-group-sm" runat="server" Text="Faculty ID Number"></asp:Label>
 
                                 <asp:TextBox ID="TextBox3" CssClass="form-control input-sm " runat="server"></asp:TextBox>
                             </div>
+                           
                             <div class="col-xs-4">
-                                <asp:Label ID="Label9" CssClass="input-group-sm" runat="server" Text="Employee Status"></asp:Label>
-                                <asp:TextBox ID="TextBox10" CssClass="form-control input-sm " runat="server"></asp:TextBox>
-                            </div>
-
-                            <div class="col-xs-4">
-                                <asp:Label ID="lblActiveT1" CssClass="input-group-sm" runat="server" Text="Teaching"></asp:Label>
-                                <div class="col-xs-4">
-                                    <asp:CheckBox ID="chkActive" runat="server" />
-                                    <asp:Label ID="lblActiveT2" CssClass="input-group-sm" runat="server" Text="Active"></asp:Label>
+                                <asp:Label ID="lblActiveT1" CssClass="input-group-sm" runat="server" Text="Is Active"></asp:Label> <br />
+                                <div class="col-xs-5">
+                                    <asp:CheckBox ID="chkActive" CssClass="text-muted text-center" runat="server"/>
                                 </div>
                             </div>
                         </div>
@@ -54,18 +49,18 @@
                         <div class="form-group input-group-sm">
                             <div class="col-xs-4">
                                 <asp:Label ID="Label10" CssClass="input-group-sm" runat="server" Text="Rank"></asp:Label>
-
                                 <asp:TextBox ID="TextBox11" CssClass="form-control input-sm " runat="server"></asp:TextBox>
                             </div>
                             <div class="col-xs-4">
-                                <asp:Label ID="Label11" CssClass="input-group-sm" runat="server" Text="College"></asp:Label>
+                                <asp:Label ID="Label11" CssClass="input-group-sm" runat="server" Text="Faculty Status"></asp:Label>
                                 <asp:TextBox ID="TextBox12" CssClass="form-control input-sm " runat="server"></asp:TextBox>
                             </div>
 
                             <div class="col-xs-4">
-                                <asp:Label ID="Label12" CssClass="input-group-sm" runat="server" Text="Department"></asp:Label>
+                                <asp:Label ID="Label12" CssClass="input-group-sm" runat="server" Text="Faculty Type"></asp:Label>
                                 <asp:TextBox ID="TextBox13" CssClass="form-control input-sm " runat="server"></asp:TextBox>
                             </div>
+
                         </div>
                     </div>
 
@@ -128,6 +123,8 @@
                         </div>
                     </div>
 
+
+
                     <div class="row">
                         <div class="form-group input-group-sm">
                             <div class="col-xs-4">
@@ -139,6 +136,11 @@
                                 <asp:Label ID="Label7" CssClass="input-group-sm" runat="server" Text="Place of Birth"></asp:Label>
                                 <asp:TextBox ID="TextBox9" CssClass="form-control input-sm " runat="server" TextMode="MultiLine"></asp:TextBox>
                             </div>
+
+                            <div class="col-lg-8">
+                                <asp:Label ID="Label9" CssClass="input-group-sm" runat="server" Text="Specialization"></asp:Label>
+                                <asp:TextBox ID="txtexpertin" CssClass="form-control input-sm " runat="server" TextMode="MultiLine"></asp:TextBox>
+                            </div> 
                         </div>
                     </div>
 
@@ -153,12 +155,10 @@
 
 
 
-
-
-        <%-- Container Employee Profile --%>
+        <%-- Container College and Department  --%>
         <div class="box box-success">
             <div class="box-header with-border">
-                <h3 class="box-title">Educational Credencials </h3>
+                <h3 class="box-title">College and Department </h3>
             </div>
             <div class="row">
             </div>
@@ -166,61 +166,8 @@
         </div>
         <%-- End Container Employee Profile --%>
 
-
-
-        <%-- Container Employee Profile --%>
-        <div class="box box-success">
-            <div class="box-header with-border">
-                <h3 class="box-title">Research </h3>
-            </div>
-            <div class="row">
-            </div>
-
-        </div>
-        <%-- End Container Employee Profile --%>
-    </div>
-
-    <%-- Main Continer Right Side --%>
-
-
-
-    <%-- Main Continer Left Side --%>
-
-    <div class="col-md-6">
-
-        <%-- Container Employee Profile --%>
-        <div class="box box-success">
-            <div class="box-header with-border">
-                <h3 class="box-title">Trainning </h3>
-            </div>
-            <div class="row">
-            </div>
-
-        </div>
-        <%-- End Container Employee Profile --%>
-
-        <%-- Container Employee Profile --%>
-        <div class="box box-success">
-            <div class="box-header with-border">
-                <h3 class="box-title">Semminars </h3>
-            </div>
-            <div class="row">
-            </div>
-
-        </div>
-        <%-- End Container Employee Profile --%>
-
-        <%-- Container Employee Profile --%>
-        <div class="box box-success">
-            <div class="box-header with-border">
-                <h3 class="box-title">Awards</h3>
-            </div>
-            <div class="row">
-            </div>
-
-        </div>
-        <%-- End Container Employee Profile --%>
-    </div>
+       
+   
 
     <%-- Main Continer Left Side --%>
 </asp:Content>

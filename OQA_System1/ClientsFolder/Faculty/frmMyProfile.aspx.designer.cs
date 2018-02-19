@@ -346,6 +346,24 @@ namespace OQA_System1.ClientsFolder.Web_InstructorsFolder {
         protected global::System.Web.UI.WebControls.Label lblER_Image;
         
         /// <summary>
+        /// Label11 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label11;
+        
+        /// <summary>
+        /// txtexpertin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtexpertin;
+        
+        /// <summary>
         /// btnUpdate control.
         /// </summary>
         /// <remarks>

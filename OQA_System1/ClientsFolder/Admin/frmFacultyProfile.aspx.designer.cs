@@ -58,13 +58,13 @@ namespace OQA_System1.ClientsFolder.Web_ADMinFolder {
         protected global::System.Web.UI.WebControls.Label Label10;
         
         /// <summary>
-        /// TextBox11 control.
+        /// drpF_Rank control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox11;
+        protected global::System.Web.UI.WebControls.DropDownList drpF_Rank;
         
         /// <summary>
         /// Label11 control.
@@ -76,13 +76,13 @@ namespace OQA_System1.ClientsFolder.Web_ADMinFolder {
         protected global::System.Web.UI.WebControls.Label Label11;
         
         /// <summary>
-        /// TextBox12 control.
+        /// drpF_Status control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox12;
+        protected global::System.Web.UI.WebControls.DropDownList drpF_Status;
         
         /// <summary>
         /// Label12 control.
@@ -94,13 +94,13 @@ namespace OQA_System1.ClientsFolder.Web_ADMinFolder {
         protected global::System.Web.UI.WebControls.Label Label12;
         
         /// <summary>
-        /// TextBox13 control.
+        /// drpF_Type control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox13;
+        protected global::System.Web.UI.WebControls.DropDownList drpF_Type;
         
         /// <summary>
         /// lblName control.
@@ -166,13 +166,13 @@ namespace OQA_System1.ClientsFolder.Web_ADMinFolder {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// TextBox2 control.
+        /// drpGender control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.DropDownList drpGender;
         
         /// <summary>
         /// Label2 control.
@@ -184,13 +184,13 @@ namespace OQA_System1.ClientsFolder.Web_ADMinFolder {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// TextBox4 control.
+        /// drpReligion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+        protected global::System.Web.UI.WebControls.DropDownList drpReligion;
         
         /// <summary>
         /// Label13 control.
@@ -202,13 +202,13 @@ namespace OQA_System1.ClientsFolder.Web_ADMinFolder {
         protected global::System.Web.UI.WebControls.Label Label13;
         
         /// <summary>
-        /// TextBox14 control.
+        /// drpCivilStatus control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox14;
+        protected global::System.Web.UI.WebControls.DropDownList drpCivilStatus;
         
         /// <summary>
         /// lblAddress control.
@@ -328,6 +328,15 @@ namespace OQA_System1.ClientsFolder.Web_ADMinFolder {
         protected global::System.Web.UI.WebControls.Label Label9;
         
         /// <summary>
+        /// Label14 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label14;
+        
+        /// <summary>
         /// txtexpertin control.
         /// </summary>
         /// <remarks>
@@ -335,5 +344,14 @@ namespace OQA_System1.ClientsFolder.Web_ADMinFolder {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtexpertin;
+        
+        /// <summary>
+        /// btnUpdate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnUpdate;
     }
 }

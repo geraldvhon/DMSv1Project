@@ -679,6 +679,9 @@
     <Content Include="Assets\Default.aspx" />
     <Content Include="Assets\dist\css\adminlte.css.map" />
     <Content Include="Assets\dist\css\adminlte.min.css.map" />
+    <Content Include="Assets\dist\img\credit\kontrabita.jpg" />
+    <Content Include="Assets\dist\img\kontrabita.jpg" />
+    <Content Include="Assets\dist\img\shinta.jpg" />
     <Content Include="Assets\LICENSE" />
     <Content Include="Assets\package-lock.json" />
     <Content Include="Assets\package.json" />

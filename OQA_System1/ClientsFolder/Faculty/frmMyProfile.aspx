@@ -15,15 +15,20 @@
             <!-- Profile Image -->
             <div class="box box-primary">
                 <div class="box-body box-profile">
-                    <img class="profile-user-img img-responsive img-circle" src="../../Assets/dist/img/user4-128x128.jpg" alt="User profile picture">
+                    <asp:Image ID="imgProfilePict" CssClass="profile-user-img img-responsive img-circle" runat="server" />
+                    <%--<img class="" src="../../Assets/dist/img/user4-128x128.jpg" alt="User profile picture">--%>
 
-                    <h3 class="profile-username text-center">Nina Mcintire</h3>
+                    <h3 class="profile-username text-center">
+                        
+                        <asp:Label ID="lblfl_name" CssClass="profile-username text-center" runat="server" Text="Lecturer 5"></asp:Label>
+                    </h3>
+                    <p class="text-muted text-center">
+                        <asp:Label ID="lblRank" CssClass="text-muted text-center" runat="server" Text="Lecturer 5"></asp:Label>
+                    </p>
 
-                    <p class="text-muted text-center">Software Engineer</p>
 
 
-
-                    <a href="#" class="btn btn-primary btn-block"><b>Update Picture</b></a>
+                   <%-- <a href="#" class="btn btn-primary btn-block"><b>Update Picture</b></a>--%>
                 </div>
                 <!-- /.box-body -->
                 <div></div>
@@ -58,17 +63,17 @@
                             </p>
                             <hr>
 
-                            <strong><i class="fa fa-star margin-r-5"></i>Rank</strong>
+                            <strong><i class="fa fa-star margin-r-5"></i>ATFTS</strong>
 
                             <p class="text-muted">
-                                <asp:Label ID="lblRank" CssClass="label label-primary" runat="server" Text="Lecturer 5"></asp:Label>
+                                 <asp:Label ID="lblATF" CssClass="label label-primary" runat="server" Text="Fulltime Faculty"></asp:Label>
                             </p>
 
                             <hr>
 
                             <strong><i class="fa fa-pencil margin-r-5"></i>Skills</strong>
                             <p>
-                                <asp:Panel ID="Panel1" CssClass="col-xs-3" runat="server"></asp:Panel>
+                                <asp:Panel ID="Panel1" CssClass="margin-r-5" runat="server"></asp:Panel>
                                 <br />
 
                                 <%-- <asp:Label ID="lblExpertIn" CssClass="label label-primary" runat="server" Text="0"></asp:Label>--%>
@@ -141,7 +146,13 @@
 
                             <div class="col-xs-3">
                                 <asp:Label ID="Label2" CssClass="input-group-sm" runat="server" Text="Religion"></asp:Label>
-                                <asp:TextBox ID="txtReligion" CssClass="form-control input-sm " runat="server"></asp:TextBox>
+                                <asp:DropDownList ID="drpReligion" CssClass="btn btn-default dropdown-toggle form-control input-sm" runat="server">
+                                    <asp:ListItem>Select Religion</asp:ListItem>
+                                    <asp:ListItem>Christian</asp:ListItem>
+                                    <asp:ListItem>Islam</asp:ListItem>
+                                    <asp:ListItem>Roman Catholic</asp:ListItem>
+                                    <asp:ListItem>Others</asp:ListItem>
+                                </asp:DropDownList>
                             </div>
 
                             <div class="col-xs-3">
@@ -184,6 +195,19 @@
                                 <asp:Label ID="Label7" CssClass="input-group-sm" runat="server" Text="Place of Birth"></asp:Label>
                                 <asp:TextBox ID="txtBplace" CssClass="form-control input-sm " runat="server" TextMode="MultiLine"></asp:TextBox>
                             </div>
+                        </div>
+                    </div>
+
+
+                      <div class="row">
+                        <div class="form-group input-group-sm">
+                            <div class="col-xs-4">
+                                <asp:Label ID="Label10" CssClass="input-group-sm" runat="server" Text="Update Profile Picture"></asp:Label>
+                                <asp:FileUpload ID="FileUploadControl" CssClass="input-group-sm" runat="server" />
+                                <asp:Label ID="lblER_Image" CssClass="input-group-sm" runat="server" Text=""></asp:Label>
+                                
+                            </div>
+                            
                         </div>
                     </div>
 

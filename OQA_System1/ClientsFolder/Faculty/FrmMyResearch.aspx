@@ -59,7 +59,7 @@
 
         <div class="box-body form-group-sm">
             <div class="col-md-12">
-                <asp:GridView ID="grdFaculty" runat="server" CssClass="table table-bordered table-hover dataTable" AutoGenerateColumns="False" AllowPaging="True" AllowSorting="True" DataKeyNames="rec_id" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" PageSize="1">
+                <asp:GridView ID="grdFaculty" runat="server" CssClass="table table-bordered table-hover dataTable" AutoGenerateColumns="False" AllowPaging="True" AllowSorting="True" DataKeyNames="empId" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" PageSize="1">
                     <Columns>
                         <asp:HyperLinkField DataTextField="empid" DataNavigateUrlFields="empid"
                             DataNavigateUrlFormatString="frmFacultyProfile.aspx?empid={0}" HeaderText="Employee Number" />

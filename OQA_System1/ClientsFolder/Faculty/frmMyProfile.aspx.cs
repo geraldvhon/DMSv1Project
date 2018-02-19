@@ -16,13 +16,8 @@ namespace OQA_System1.ClientsFolder.Web_InstructorsFolder
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
-            {
-                GetValue();
-               
-            }
+            { GetValue(); }
            
-           
-            
         }
 
 
@@ -49,7 +44,7 @@ namespace OQA_System1.ClientsFolder.Web_InstructorsFolder
             lblATF.Text = tblemp.sp_Faculty_Display2().Rows[0][18].ToString();
             lblRank.Text = tblemp.sp_Faculty_Display2().Rows[0][19].ToString();
             lblfl_name.Text = tblemp.sp_Faculty_Display2().Rows[0][20].ToString();
-            imgProfilePict.ImageUrl = tblemp.sp_Faculty_Display2().Rows[0][21].ToString();
+            imgProfilePict.ImageUrl = "../../Assets/dist/img/"+tblemp.sp_Faculty_Display2().Rows[0][21].ToString();
 
             //Label lbl = new Label();
             //lbl.Text = "your text";
@@ -84,10 +79,7 @@ namespace OQA_System1.ClientsFolder.Web_InstructorsFolder
 
 
 
-        protected void UploadButton_Click2(object sender, EventArgs e)
-        {
-            FileUploadControl.Load();
-        }
+       
         protected void UploadButton_Click(object sender, EventArgs e)
         {
             if (FileUploadControl.HasFile)

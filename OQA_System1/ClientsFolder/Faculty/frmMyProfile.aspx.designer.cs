@@ -13,6 +13,33 @@ namespace OQA_System1.ClientsFolder.Web_InstructorsFolder {
     public partial class frmMyProfile {
         
         /// <summary>
+        /// imgProfilePict control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image imgProfilePict;
+        
+        /// <summary>
+        /// lblfl_name control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblfl_name;
+        
+        /// <summary>
+        /// lblRank control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblRank;
+        
+        /// <summary>
         /// lblCollege control.
         /// </summary>
         /// <remarks>
@@ -40,13 +67,13 @@ namespace OQA_System1.ClientsFolder.Web_InstructorsFolder {
         protected global::System.Web.UI.WebControls.Label lblStatus;
         
         /// <summary>
-        /// lblRank control.
+        /// lblATF control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblRank;
+        protected global::System.Web.UI.WebControls.Label lblATF;
         
         /// <summary>
         /// Panel1 control.
@@ -157,13 +184,13 @@ namespace OQA_System1.ClientsFolder.Web_InstructorsFolder {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// txtReligion control.
+        /// drpReligion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtReligion;
+        protected global::System.Web.UI.WebControls.DropDownList drpReligion;
         
         /// <summary>
         /// Label9 control.
@@ -290,6 +317,33 @@ namespace OQA_System1.ClientsFolder.Web_InstructorsFolder {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtBplace;
+        
+        /// <summary>
+        /// Label10 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label10;
+        
+        /// <summary>
+        /// FileUploadControl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload FileUploadControl;
+        
+        /// <summary>
+        /// lblER_Image control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblER_Image;
         
         /// <summary>
         /// btnUpdate control.

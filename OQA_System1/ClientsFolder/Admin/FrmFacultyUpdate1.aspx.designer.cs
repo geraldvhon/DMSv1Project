@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace OQA_System1.ClientsFolder.Web_ADMinFolder {
+namespace OQA_System1.ClientsFolder.Admin {
     
     
-    public partial class frmFacultyProfile {
+    public partial class FrmFacultyUpdate1 {
         
         /// <summary>
         /// lblTitle control.

@@ -39,6 +39,9 @@ namespace DataClassLibrary
         public bool IsActive { get; set; }
         public string StatusCode { get; set; }
         public string ExpertIn { get; set; }
+        public string Atfs { get; set; }
+        public string F_rank { get; set; }
+        public string F_pict { get; set; }
         public string Password { get; set; }
         
 
@@ -77,11 +80,39 @@ namespace DataClassLibrary
         per_add, prob_add, email, telno, cp_no, bday, bplace, isActive, 
         statusCode, expertIn, Password*/
 
-        public void sp_RegisterEmployee()
+        public void sp_tblEmployee_New()
         {   conn.Open();
-            SqlCommand cmd = new SqlCommand("sp_RegisterEmployee", conn);
+        SqlCommand cmd = new SqlCommand("sp_tblEmployee_New", conn);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@isAdd", SqlDbType.VarChar).Value = isAdd;
+            cmd.Parameters.Add("@empID", SqlDbType.VarChar).Value = EmpID;
+            cmd.Parameters.Add("@lname", SqlDbType.VarChar).Value = Lname;
+            cmd.Parameters.Add("@fname", SqlDbType.VarChar).Value = Fname;
+            cmd.Parameters.Add("@mname", SqlDbType.VarChar).Value = Mname;
+            cmd.Parameters.Add("@nkName", SqlDbType.VarChar).Value = NkName;
+            cmd.Parameters.Add("@gender", SqlDbType.VarChar).Value = Gender;
+            cmd.Parameters.Add("@civil_Stat", SqlDbType.VarChar).Value = Civil_Stat;
+            cmd.Parameters.Add("@religion", SqlDbType.VarChar).Value = Religion;
+            cmd.Parameters.Add("@per_add", SqlDbType.VarChar).Value = Per_add;
+            cmd.Parameters.Add("@prob_add", SqlDbType.VarChar).Value = Prob_add;
+            cmd.Parameters.Add("@email", SqlDbType.VarChar).Value = Email;
+            cmd.Parameters.Add("@telno", SqlDbType.VarChar).Value = Telno;
+            cmd.Parameters.Add("@cp_no", SqlDbType.VarChar).Value = Cp_no;
+            cmd.Parameters.Add("@bday", SqlDbType.VarChar).Value = Bday;
+            cmd.Parameters.Add("@bplace", SqlDbType.VarChar).Value = Bplace;
+            cmd.Parameters.Add("@isActive", SqlDbType.VarChar).Value = IsActive;
+            cmd.Parameters.Add("@statusCode", SqlDbType.VarChar).Value = StatusCode;
+            cmd.Parameters.Add("@expertIn", SqlDbType.VarChar).Value = ExpertIn;
+            cmd.Parameters.Add("@password", SqlDbType.VarChar).Value = Password;
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
+
+
+        public void sp_tblEmployee_Update()
+        {
+            conn.Open();
+            SqlCommand cmd = new SqlCommand("sp_tblEmployee_Update", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@empID", SqlDbType.VarChar).Value = EmpID;
             cmd.Parameters.Add("@lname", SqlDbType.VarChar).Value = Lname;
             cmd.Parameters.Add("@fname", SqlDbType.VarChar).Value = Fname;

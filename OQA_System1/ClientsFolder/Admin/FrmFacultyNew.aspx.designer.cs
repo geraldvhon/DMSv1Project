@@ -7,10 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace OQA_System1.ClientsFolder.Web_ADMinFolder {
+namespace OQA_System1.ClientsFolder.Admin {
     
     
-    public partial class frmFacultyProfile {
+    public partial class FrmFacultyNew {
+        
+        /// <summary>
+        /// lblTitle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTitle;
         
         /// <summary>
         /// Label8 control.

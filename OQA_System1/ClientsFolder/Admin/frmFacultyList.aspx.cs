@@ -16,5 +16,10 @@ namespace OQA_System1.ClientsFolder.Web_ADMinFolder
             grdFaculty.DataSource = emp.sp_Faculty_Display();
             grdFaculty.DataBind();
         }
+
+        protected void btnNew_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("FrmFacultyNew.aspx");
+        }
     }
 }

@@ -691,6 +691,7 @@
     <Content Include="Assets\yarn.lock" />
     <Content Include="ClientsFolder\Admin\frmAdmin.Master" />
     <Content Include="ClientsFolder\Admin\frmAdmin2.Master" />
+    <Content Include="ClientsFolder\Admin\FrmFacultyNew.aspx" />
     <Content Include="ClientsFolder\Faculty\Facultytemplate.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -7356,7 +7357,7 @@
     <Content Include="Assets\starter.html" />
     <Content Include="ClientsFolder\Admin\frmDashBoard1.aspx" />
     <Content Include="ClientsFolder\Admin\frmFacultyList.aspx" />
-    <Content Include="ClientsFolder\Admin\frmFacultyProfile.aspx" />
+    <Content Include="ClientsFolder\Admin\frmFacultyUpdate.aspx" />
     <Content Include="ClientsFolder\Admin\SampleWebpageForAdmin.aspx" />
     <Content Include="ClientsFolder\Faculty\FrmInstruc.aspx" />
     <Content Include="ClientsFolder\Faculty\frmMyAward.aspx" />
@@ -7407,12 +7408,19 @@
     <Compile Include="ClientsFolder\Admin\frmFacultyList.aspx.designer.cs">
       <DependentUpon>frmFacultyList.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ClientsFolder\Admin\frmFacultyProfile.aspx.cs">
-      <DependentUpon>frmFacultyProfile.aspx</DependentUpon>
+    <Compile Include="ClientsFolder\Admin\FrmFacultyNew.aspx.cs">
+      <DependentUpon>FrmFacultyNew.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ClientsFolder\Admin\frmFacultyProfile.aspx.designer.cs">
-      <DependentUpon>frmFacultyProfile.aspx</DependentUpon>
+    <Compile Include="ClientsFolder\Admin\FrmFacultyNew.aspx.designer.cs">
+      <DependentUpon>FrmFacultyNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClientsFolder\Admin\frmFacultyUpdate.aspx.cs">
+      <DependentUpon>frmFacultyUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientsFolder\Admin\frmFacultyUpdate.aspx.designer.cs">
+      <DependentUpon>frmFacultyUpdate.aspx</DependentUpon>
     </Compile>
     <Compile Include="ClientsFolder\Admin\SampleWebpageForAdmin.aspx.cs">
       <DependentUpon>SampleWebpageForAdmin.aspx</DependentUpon>

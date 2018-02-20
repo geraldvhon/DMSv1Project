@@ -1,27 +1,21 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ClientsFolder/Admin/frmAdmin2.Master" AutoEventWireup="true" CodeBehind="frmFacultyProfile.aspx.cs" Inherits="OQA_System1.ClientsFolder.Web_ADMinFolder.frmFacultyProfile" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ClientsFolder/Admin/frmAdmin2.Master" AutoEventWireup="true" CodeBehind="FrmFacultyNew.aspx.cs" Inherits="OQA_System1.ClientsFolder.Admin.FrmFacultyNew" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title_Page" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Add_Some_from_head" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Container_For_Main_Title_MainBody" runat="server">
-    Faculty Profile
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="Container_For_Explain_Title_MainBody" runat="server">
 </asp:Content>
-
-
-
 <asp:Content ID="Content5" ContentPlaceHolderID="Container_for_MainBody" runat="server">
-
-    <%-- Main Continer Right Side --%>
+      <%-- Main Continer Right Side --%>
 
 
 
     <%-- Container Employee Profile --%>
     <div class="box box-primary ">
         <div class="box-header with-border">
-            <h3 class="box-title">Personal Information </h3>
+            <h3 class="box-title">  <asp:Label ID="lblTitle" CssClass="input-group-sm" runat="server" Text="New Faculty Profile"></asp:Label></h3>
         </div>
 
         <div class="box-body form-group-sm">

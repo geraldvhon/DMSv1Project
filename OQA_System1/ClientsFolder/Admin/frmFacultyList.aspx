@@ -49,7 +49,7 @@
 
                 <div class="col-sm-6">
                     <div class="btn-group">
-                        <asp:Button ID="btnNew" runat="server" class="btn btn-block btn-primary" Text="Add Reord" />
+                        <asp:Button ID="btnNew" runat="server" class="btn btn-block btn-primary" Text="Add Reord" OnClick="btnNew_Click" />
                     </div>
                 </div>
 
@@ -64,7 +64,7 @@
                 <asp:GridView ID="grdFaculty" runat="server" CssClass="table table-bordered table-hover dataTable" AutoGenerateColumns="False" AllowPaging="True" AllowSorting="True" DataKeyNames="empId" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" PageSize="1">
                     <Columns>
                         <asp:HyperLinkField DataTextField="empid" DataNavigateUrlFields="empid"
-                            DataNavigateUrlFormatString="frmFacultyProfile.aspx?empid={0}" HeaderText="Employee Number" />
+                            DataNavigateUrlFormatString="frmFacultyUpdate.aspx?empid={0}" HeaderText="Employee Number" />
                         <asp:BoundField DataField="Name" HeaderText="Name" />
                         <asp:BoundField DataField="Department" HeaderText="Department" />
                         <asp:BoundField DataField="College" HeaderText="College" />

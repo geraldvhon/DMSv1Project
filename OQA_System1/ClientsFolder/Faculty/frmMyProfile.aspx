@@ -19,7 +19,7 @@
                     <%--<img class="" src="../../Assets/dist/img/user4-128x128.jpg" alt="User profile picture">--%>
 
                     <h3 class="profile-username text-center">
-                        
+
                         <asp:Label ID="lblfl_name" CssClass="profile-username text-center" runat="server" Text="Lecturer 5"></asp:Label>
                     </h3>
                     <p class="text-muted text-center">
@@ -28,7 +28,7 @@
 
 
 
-                   <%-- <a href="#" class="btn btn-primary btn-block"><b>Update Picture</b></a>--%>
+                    <%-- <a href="#" class="btn btn-primary btn-block"><b>Update Picture</b></a>--%>
                 </div>
                 <!-- /.box-body -->
                 <div></div>
@@ -66,7 +66,7 @@
                             <strong><i class="fa fa-star margin-r-5"></i>Faculty Type</strong>
 
                             <p class="text-muted">
-                                 <asp:Label ID="lblATF" CssClass="label label-primary" runat="server" Text="Fulltime Faculty"></asp:Label>
+                                <asp:Label ID="lblATF" CssClass="label label-primary" runat="server" Text="Fulltime Faculty"></asp:Label>
                             </p>
 
                             <hr>
@@ -188,18 +188,19 @@
                         <div class="form-group input-group-sm">
                             <div class="col-xs-4">
                                 <asp:Label ID="Label6" CssClass="input-group-sm" runat="server" Text="Birthday"></asp:Label>
-
                                 <asp:TextBox ID="txtBday" CssClass="form-control input-sm " runat="server"></asp:TextBox>
                             </div>
-                            <div class="col-lg-8">
+
+                            <div class="col-xs-8">
                                 <asp:Label ID="Label7" CssClass="input-group-sm" runat="server" Text="Place of Birth"></asp:Label>
                                 <asp:TextBox ID="txtBplace" CssClass="form-control input-sm " runat="server" TextMode="MultiLine"></asp:TextBox>
                             </div>
+
                         </div>
                     </div>
 
 
-                      <div class="row">
+                    <div class="row">
                         <div class="form-group input-group-sm">
                             <div class="col-xs-4">
                                 <asp:Label ID="Label10" CssClass="input-group-sm" runat="server" Text="Update Profile Picture"></asp:Label>

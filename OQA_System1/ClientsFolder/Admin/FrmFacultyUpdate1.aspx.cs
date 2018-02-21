@@ -6,13 +6,12 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace OQA_System1.ClientsFolder.Web_ADMinFolder
+namespace OQA_System1.ClientsFolder.Admin
 {
-    public partial class frmFacultyProfile : System.Web.UI.Page
+    public partial class FrmFacultyUpdate1 : System.Web.UI.Page
     {
-        string xempid="";
+        string xempid = "";
         tblEmployee tblemp = new tblEmployee();
-
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -20,13 +19,10 @@ namespace OQA_System1.ClientsFolder.Web_ADMinFolder
                 xempid = Request.QueryString["empid"];
                 getValue_fromDb();
             }
-            //Label1.Text = xempid;
         }
 
-
-
         private void getValue_fromDb()
-        {   
+        {
             txtempno.Text = xempid;
             tblemp.EmpID = txtempno.Text;
             txtlname.Text = tblemp.sp_Faculty_Display2().Rows[0][1].ToString();
@@ -53,19 +49,19 @@ namespace OQA_System1.ClientsFolder.Web_ADMinFolder
         {
             tblemp.EmpID = txtempno.Text;
             tblemp.Lname = txtlname.Text;
-            tblemp.Lname =  txtlname.Text ;
-            tblemp.Fname = txtfname.Text ;
-            tblemp.Mname =  txtmname.Text ;
-            tblemp.NkName = txtNkName.Text ;
-            tblemp.Gender = drpGender.Text ;
+            tblemp.Lname = txtlname.Text;
+            tblemp.Fname = txtfname.Text;
+            tblemp.Mname = txtmname.Text;
+            tblemp.NkName = txtNkName.Text;
+            tblemp.Gender = drpGender.Text;
             tblemp.Civil_Stat = drpCivilStatus.Text;
-            tblemp.Religion = drpReligion.Text ;
+            tblemp.Religion = drpReligion.Text;
             tblemp.Per_add = txtAddress.Text;
-            tblemp.Email = txtEmail.Text ;
-            tblemp.Telno = txtTelNo.Text ;
+            tblemp.Email = txtEmail.Text;
+            tblemp.Telno = txtTelNo.Text;
             tblemp.Cp_no = txtCellNo.Text;
             tblemp.Bday = txtBday.Text;
-            tblemp.Bplace = txtBplace.Text ;
+            tblemp.Bplace = txtBplace.Text;
             tblemp.StatusCode = drpF_Status.Text;
             tblemp.ExpertIn = txtexpertin.Text;
             //tblemp. drpF_Type.Text;

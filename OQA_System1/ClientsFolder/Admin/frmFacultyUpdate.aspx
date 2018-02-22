@@ -1,14 +1,19 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ClientsFolder/Admin/frmAdmin2.Master" AutoEventWireup="true" CodeBehind="FrmFacultyNew.aspx.cs" Inherits="OQA_System1.ClientsFolder.Admin.FrmFacultyNew" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ClientsFolder/Admin/frmAdmin2.Master" AutoEventWireup="true" CodeBehind="frmFacultyUpdate.aspx.cs" Inherits="OQA_System1.ClientsFolder.Web_ADMinFolder.frmFacultyProfile" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Title_Page" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Add_Some_from_head" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Container_For_Main_Title_MainBody" runat="server">
+    Faculty Profile
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="Container_For_Explain_Title_MainBody" runat="server">
 </asp:Content>
+
+
+
 <asp:Content ID="Content5" ContentPlaceHolderID="Container_for_MainBody" runat="server">
+
     <%-- Main Continer Right Side --%>
 
 
@@ -16,8 +21,7 @@
     <%-- Container Employee Profile --%>
     <div class="box box-primary ">
         <div class="box-header with-border">
-            <h3 class="box-title">
-                <asp:Label ID="lblTitle" CssClass="input-group-sm" runat="server" Text="New Faculty Profile"></asp:Label></h3>
+            <h3 class="box-title">  <asp:Label ID="lblTitle" CssClass="input-group-sm" runat="server" Text="Update Faculty Profile"></asp:Label></h3>
         </div>
 
         <div class="box-body form-group-sm">
@@ -29,7 +33,7 @@
                         <div class="col-xs-4">
                             <asp:Label ID="Label8" CssClass="input-group-sm" runat="server" Text="Faculty ID Number"></asp:Label>
 
-                            <asp:TextBox ID="txtempId" CssClass="form-control input-sm " runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtempno" CssClass="form-control input-sm " runat="server"  ReadOnly="true"></asp:TextBox>
                         </div>
 
                         <div class="col-xs-4">
@@ -48,31 +52,31 @@
                             <asp:Label ID="Label10" CssClass="input-group-sm" runat="server" Text="Faculty Rank"></asp:Label>
                             <asp:DropDownList ID="drpF_Rank" CssClass="btn btn-default dropdown-toggle form-control input-sm" runat="server">
                                 <asp:ListItem>Select Faculty Rank</asp:ListItem>
-                                <asp:ListItem> Instructor 1 </asp:ListItem>
-                                <asp:ListItem> Instructor 2</asp:ListItem>
-                                <asp:ListItem> Assistant Professor 1</asp:ListItem>
-                                <asp:ListItem> Assistant Professor 2</asp:ListItem>
-                                <asp:ListItem> Assistant Professor 3</asp:ListItem>
-                                <asp:ListItem> Assistant Professor 4</asp:ListItem>
-                                <asp:ListItem> Assistant Professor 5</asp:ListItem>
-                                <asp:ListItem> Assistant Professor 6</asp:ListItem>
-                                <asp:ListItem> Assistant Professor 7</asp:ListItem>
-                                <asp:ListItem> Assistant Professor 8</asp:ListItem>
-                                <asp:ListItem> Assistant Professor 9</asp:ListItem>
-                                <asp:ListItem> Associate Professor 1</asp:ListItem>
-                                <asp:ListItem> Associate Professor 2</asp:ListItem>
-                                <asp:ListItem> Associate Professor 3</asp:ListItem>
-                                <asp:ListItem> Associate Professor 4</asp:ListItem>
-                                <asp:ListItem> Associate Professor 5</asp:ListItem>
-                                <asp:ListItem> Associate Professor 6</asp:ListItem>
-                                <asp:ListItem> Full Professor 1</asp:ListItem>
-                                <asp:ListItem> Full Professor 2</asp:ListItem>
-                                <asp:ListItem> Full Professor 3</asp:ListItem>
-                                <asp:ListItem> Full Professor 4</asp:ListItem>
-                                <asp:ListItem> Full Professor 5</asp:ListItem>
-                                <asp:ListItem> Full Professor 6</asp:ListItem>
-                                <asp:ListItem> Full Professor 7</asp:ListItem>
-                                <asp:ListItem> Full Professor 8</asp:ListItem>
+                                <asp:ListItem>Instructor 1 </asp:ListItem>
+                                <asp:ListItem>Instructor 2</asp:ListItem>
+                                <asp:ListItem>Assistant Professor 1</asp:ListItem>
+                                <asp:ListItem>Assistant Professor 2</asp:ListItem>
+                                <asp:ListItem>Assistant Professor 3</asp:ListItem>
+                                <asp:ListItem>Assistant Professor 4</asp:ListItem>
+                                <asp:ListItem>Assistant Professor 5</asp:ListItem>
+                                <asp:ListItem>Assistant Professor 6</asp:ListItem>
+                                <asp:ListItem>Assistant Professor 7</asp:ListItem>
+                                <asp:ListItem>Assistant Professor 8</asp:ListItem>
+                                <asp:ListItem>Assistant Professor 9</asp:ListItem>
+                                <asp:ListItem>Associate Professor 1</asp:ListItem>
+                                <asp:ListItem>Associate Professor 2</asp:ListItem>
+                                <asp:ListItem>Associate Professor 3</asp:ListItem>
+                                <asp:ListItem>Associate Professor 4</asp:ListItem>
+                                <asp:ListItem>Associate Professor 5</asp:ListItem>
+                                <asp:ListItem>Associate Professor 6</asp:ListItem>
+                                <asp:ListItem>Full Professor 1</asp:ListItem>
+                                <asp:ListItem>Full Professor 2</asp:ListItem>
+                                <asp:ListItem>Full Professor 3</asp:ListItem>
+                                <asp:ListItem>Full Professor 4</asp:ListItem>
+                                <asp:ListItem>Full Professor 5</asp:ListItem>
+                                <asp:ListItem>Full Professor 6</asp:ListItem>
+                                <asp:ListItem>Full Professor 7</asp:ListItem>
+                                <asp:ListItem>Full Professor 8</asp:ListItem>
                             </asp:DropDownList>
                         </div>
                         <div class="col-xs-4">
@@ -156,18 +160,18 @@
                 <div class="row">
                     <div class="form-group input-group-sm">
                         <div class="col-xs-4">
-                            <asp:Label ID="txtEmail" CssClass="input-group-sm" runat="server" Text="Email"></asp:Label>
+                            <asp:Label ID="Label3" CssClass="input-group-sm" runat="server" Text="Email"></asp:Label>
 
-                            <asp:TextBox ID="TextBox5" CssClass="form-control input-sm " runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtEmail" CssClass="form-control input-sm " runat="server"></asp:TextBox>
                         </div>
                         <div class="col-xs-4">
                             <asp:Label ID="Label4" CssClass="input-group-sm" runat="server" Text="Telephone Number"></asp:Label>
-                            <asp:TextBox ID="txtTelno" CssClass="form-control input-sm " runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtTelNo" CssClass="form-control input-sm " runat="server"></asp:TextBox>
                         </div>
 
                         <div class="col-xs-4">
                             <asp:Label ID="Label5" CssClass="input-group-sm" runat="server" Text="Cell Phone Number"></asp:Label>
-                            <asp:TextBox ID="txtCpno" CssClass="form-control input-sm " runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtCellNo" CssClass="form-control input-sm " runat="server"></asp:TextBox>
                         </div>
                     </div>
                 </div>
@@ -175,12 +179,13 @@
                 <div class="row">
                     <div class="form-group input-group-sm">
                         <div class="col-xs-4">
-                            <asp:Label ID="Label6" CssClass="input-group-sm" runat="server" Text="Birthday"></asp:Label> <br />
-                            <asp:TextBox ID="txtBidate" CssClass="fc fc-unthemed fc-ltr" runat="server" TextMode="Date"></asp:TextBox>
+                            <asp:Label ID="Label6" CssClass="input-group-sm" runat="server" Text="Birthday"></asp:Label>
+
+                            <asp:TextBox ID="txtBday" CssClass="form-control input-sm " runat="server"></asp:TextBox>
                         </div>
                         <div class="col-lg-8">
                             <asp:Label ID="Label7" CssClass="input-group-sm" runat="server" Text="Place of Birth"></asp:Label>
-                            <asp:TextBox ID="txtBPlace" CssClass="form-control input-sm " runat="server" TextMode="MultiLine"></asp:TextBox>
+                            <asp:TextBox ID="txtBplace" CssClass="form-control input-sm " runat="server" TextMode="MultiLine"></asp:TextBox>
                         </div>
 
                         <div class="col-lg-8">
@@ -190,14 +195,12 @@
                         </div>
                     </div>
                 </div>
-
+                
 
                 <div class="box-footer">
-                    <div class="row">
-                        <div class="form-group input-group-sm">
-                            <div class="col-lg-3">
-                                <asp:Button ID="btnSaveP" CssClass="btn btn-primary" runat="server" Text="Save Record" OnClick="btnActionButton" />
-                            </div>
+                    <div class="form-group input-group-sm">
+                        <div class="col-lg-3">
+                            <asp:Button ID="btnUpdate" CssClass="btn btn-primary" runat="server" Text="Update Record" />
                         </div>
                     </div>
                 </div>

@@ -110,8 +110,10 @@ namespace DataClassLibrary
                 cmd.ExecuteNonQuery();
                 conn.Close();
             }
-
-            return "Record Save";
+            
+            else { return "Duplica Data Found"; }
+           
+            return "Record Save"; 
         }
 
 
@@ -144,7 +146,6 @@ namespace DataClassLibrary
             cmd.Parameters.Add("@civil_Stat", SqlDbType.VarChar).Value = Civil_Stat;
             cmd.Parameters.Add("@religion", SqlDbType.VarChar).Value = Religion;
             cmd.Parameters.Add("@per_add", SqlDbType.VarChar).Value = Per_add;
-            cmd.Parameters.Add("@prob_add", SqlDbType.VarChar).Value = Prob_add;
             cmd.Parameters.Add("@email", SqlDbType.VarChar).Value = Email;
             cmd.Parameters.Add("@telno", SqlDbType.VarChar).Value = Telno;
             cmd.Parameters.Add("@cp_no", SqlDbType.VarChar).Value = Cp_no;

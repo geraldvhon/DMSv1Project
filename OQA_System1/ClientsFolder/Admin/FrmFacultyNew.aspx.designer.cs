@@ -31,13 +31,13 @@ namespace OQA_System1.ClientsFolder.Admin {
         protected global::System.Web.UI.WebControls.Label Label8;
         
         /// <summary>
-        /// TextBox3 control.
+        /// txtempId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox txtempId;
         
         /// <summary>
         /// lblActiveT1 control.
@@ -229,22 +229,22 @@ namespace OQA_System1.ClientsFolder.Admin {
         protected global::System.Web.UI.WebControls.Label lblAddress;
         
         /// <summary>
-        /// TextBox1 control.
+        /// txtAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txtAddress;
         
         /// <summary>
-        /// Label3 control.
+        /// txtEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
+        protected global::System.Web.UI.WebControls.Label txtEmail;
         
         /// <summary>
         /// TextBox5 control.
@@ -265,13 +265,13 @@ namespace OQA_System1.ClientsFolder.Admin {
         protected global::System.Web.UI.WebControls.Label Label4;
         
         /// <summary>
-        /// TextBox6 control.
+        /// txtTelno control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox6;
+        protected global::System.Web.UI.WebControls.TextBox txtTelno;
         
         /// <summary>
         /// Label5 control.
@@ -283,13 +283,13 @@ namespace OQA_System1.ClientsFolder.Admin {
         protected global::System.Web.UI.WebControls.Label Label5;
         
         /// <summary>
-        /// TextBox7 control.
+        /// txtCpno control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox7;
+        protected global::System.Web.UI.WebControls.TextBox txtCpno;
         
         /// <summary>
         /// Label6 control.
@@ -301,13 +301,13 @@ namespace OQA_System1.ClientsFolder.Admin {
         protected global::System.Web.UI.WebControls.Label Label6;
         
         /// <summary>
-        /// TextBox8 control.
+        /// txtBidate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox8;
+        protected global::System.Web.UI.WebControls.TextBox txtBidate;
         
         /// <summary>
         /// Label7 control.
@@ -319,13 +319,13 @@ namespace OQA_System1.ClientsFolder.Admin {
         protected global::System.Web.UI.WebControls.Label Label7;
         
         /// <summary>
-        /// TextBox9 control.
+        /// txtBPlace control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox9;
+        protected global::System.Web.UI.WebControls.TextBox txtBPlace;
         
         /// <summary>
         /// Label9 control.
@@ -355,12 +355,12 @@ namespace OQA_System1.ClientsFolder.Admin {
         protected global::System.Web.UI.WebControls.TextBox txtexpertin;
         
         /// <summary>
-        /// btnUpdate control.
+        /// btnSaveP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnUpdate;
+        protected global::System.Web.UI.WebControls.Button btnSaveP;
     }
 }

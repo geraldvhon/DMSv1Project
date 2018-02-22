@@ -53,7 +53,8 @@ namespace OQA_System1.ClientsFolder.Admin
             tblemp.IsActive = chkActive.Checked;
             tblemp.StatusCode = drpF_Status.Text;
             tblemp.F_rank = drpF_Type.Text;
-            
+            tblemp.F_pict = "image.jpg";
+            tblemp.Password = 
 
 
 

@@ -680,6 +680,8 @@
     <Content Include="Assets\dist\css\adminlte.css.map" />
     <Content Include="Assets\dist\css\adminlte.min.css.map" />
     <Content Include="Assets\dist\img\credit\kontrabita.jpg" />
+    <Content Include="Assets\dist\img\FacultyPict\image.jpg" />
+    <Content Include="Assets\dist\img\FacultyPict\shinta.jpg" />
     <Content Include="Assets\dist\img\image.png" />
     <Content Include="Assets\dist\img\shinta.jpg" />
     <Content Include="Assets\LICENSE" />

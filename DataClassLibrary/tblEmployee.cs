@@ -100,10 +100,10 @@ namespace DataClassLibrary
                 cmd.Parameters.Add("@cp_no", SqlDbType.VarChar).Value = Cp_no;
                 cmd.Parameters.Add("@bday", SqlDbType.VarChar).Value = Bday;
                 cmd.Parameters.Add("@bplace", SqlDbType.VarChar).Value = Bplace;
-                cmd.Parameters.Add("@isActive", SqlDbType.VarChar).Value = IsActive;
-                cmd.Parameters.Add("@statusCode", SqlDbType.Bit).Value = StatusCode;
+                cmd.Parameters.Add("@isActive", SqlDbType.Bit).Value = IsActive;
+                cmd.Parameters.Add("@statusCode", SqlDbType.VarChar).Value = StatusCode;
                 cmd.Parameters.Add("@expertIn", SqlDbType.VarChar).Value = ExpertIn;
-                cmd.Parameters.Add("@atsf", SqlDbType.VarChar).Value = Atfs;
+                cmd.Parameters.Add("@atfs", SqlDbType.VarChar).Value = Atfs;
                 cmd.Parameters.Add("@f_rank", SqlDbType.VarChar).Value = F_rank;
                 cmd.Parameters.Add("@f_pict", SqlDbType.VarChar).Value = F_pict;
                 cmd.Parameters.Add("@password", SqlDbType.VarChar).Value = Password;

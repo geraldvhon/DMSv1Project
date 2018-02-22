@@ -22,8 +22,8 @@ namespace OQA_System1.ClientsFolder.Web_InstructorsFolder
 
 
         protected void GetValue()
-        {   
-            lblempno.Text = "F-2494";
+        {
+            lblempno.Text = "F-1411";
             tblemp.EmpID = lblempno.Text;
             txtlname.Text = tblemp.sp_Faculty_Display2().Rows[0][1].ToString();
             txtfname.Text = tblemp.sp_Faculty_Display2().Rows[0][2].ToString();
@@ -45,7 +45,7 @@ namespace OQA_System1.ClientsFolder.Web_InstructorsFolder
             lblATF.Text = tblemp.sp_Faculty_Display2().Rows[0][18].ToString();
             lblRank.Text = tblemp.sp_Faculty_Display2().Rows[0][19].ToString();
             lblfl_name.Text = tblemp.sp_Faculty_Display2().Rows[0][20].ToString();
-            imgProfilePict.ImageUrl = "../../Assets/dist/img/"+tblemp.sp_Faculty_Display2().Rows[0][21].ToString();
+            imgProfilePict.ImageUrl = "../../Assets/dist/img/FacultyPict/" + tblemp.sp_Faculty_Display2().Rows[0][21].ToString();
 
             //Label lbl = new Label();
             //lbl.Text = "your text";

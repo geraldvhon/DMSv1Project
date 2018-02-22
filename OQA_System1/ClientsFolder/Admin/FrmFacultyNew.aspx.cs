@@ -24,16 +24,17 @@ namespace OQA_System1.ClientsFolder.Admin
             switch(btn.ID)
             {
                 case "btnSaveP": 
-                    {   
-
-                        MessageBox.Show(this,"Shinta");
+                    {
+                        getDataValues();
+                        string m = tblemp.sp_tblEmployee_New();
+                        MessageBox.Show(this,m);
                         break; }
 
             }
         }
 
 
-        private void getDataValue()
+        private void getDataValues()
         {
             tblemp.EmpID = txtempId.Text;
             tblemp.Lname = txtlname.Text;
@@ -52,9 +53,10 @@ namespace OQA_System1.ClientsFolder.Admin
             tblemp.ExpertIn = txtexpertin.Text;
             tblemp.IsActive = chkActive.Checked;
             tblemp.StatusCode = drpF_Status.Text;
+            tblemp.Atfs = drpF_Type.Text;
             tblemp.F_rank = drpF_Type.Text;
             tblemp.F_pict = "image.jpg";
-            tblemp.Password = 
+            tblemp.Password = "12345";
 
 
 
@@ -72,7 +74,7 @@ namespace OQA_System1.ClientsFolder.Admin
                "MessageBox",
                "<script language='javascript'>alert('" + Message + "');</script>"
             );
-        }
+         }
     }
    
 }
